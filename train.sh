@@ -1,0 +1,25 @@
+CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 --master_port=8949 --use_env \
+    main.py \
+    --train_dataset textzoom_train_1:textzoom_train_2 \
+    --val_dataset textzoom_test_easy \
+    --data_root ./data/textzoom/ \
+    --output_dir ./checkpoint_vit_finetune/ \
+    --backbone vit \
+    --pretrained_backbone ./pretrained/resnet50-19c8e357.pth  \
+    --decoder deconv \
+    --batch_size 48 \
+    --lr 0.0001 \
+    --num_workers 8 \
+    --code_dir . \
+    --epochs 300 \
+    --save_interval 10 \
+    --warmup_epochs 5 \
+    --dataset_file sr_lmdb \
+    --rotate_max_angle 10 \
+    --rotate_prob 0.0 \
+    --crop_min_ratio 0.8 \
+    --crop_max_ratio 1.0 \
+    --crop_prob 1.0 \
+    --pixel_embed_dim 768 \
+    --train  \
+    --resume /home/pci/disk1/lcy/unitext/SR_single/DETR-SR/checkpoint_rec/checkpoint0015.pth
