@@ -3,4 +3,4 @@
 
 Coming soon.
 
-Due to being busy with work after graduation, the code will be open-sourced by March at the latest.
+The original code of QT-TextSR is open-sourced. The guidance and the pretrained model will be released in this month.
