@@ -29,7 +29,7 @@ data/
 
 ## Training 
 
-Create an new directory (```./pretrained/```) and place the pretrain weights, including the MAE-pretrained weights and the VGG parameters.  All of them are available at [here](). You can also retrain the ViT-base using MAE by yourself.
+Create an new directory (```./pretrained/```) and place the pretrain weights, including the MAE-pretrained weights and the VGG parameters.  All of them are available at [here](https://drive.google.com/drive/folders/1jYytUaiJK-9qwIM3MWm6qNzoBTFj-ORl?usp=sharing). You can also retrain the ViT-base using MAE by yourself.
 
 ``` bash
 CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 --master_port=8949 --use_env \
