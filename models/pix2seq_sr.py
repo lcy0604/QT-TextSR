@@ -14,7 +14,7 @@ from .transformer import build_transformer
 from .deconv_decoder import build_feature_extractor
 from .pixel_decoder import build_pixel_deocder
 from .loss import TextSRLoss_addreg_MS
-from .converter import build_convertor
+from .convertor import build_convertor
 
 class Pix2Seq(nn.Module):
     """ This is the DETR module that performs object detection """
