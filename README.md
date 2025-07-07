@@ -88,8 +88,6 @@ CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.launch --nproc_per_node=1 --m
     --resume /your/checkpoint/
 ```
 
- We provide one of our [models](https://drive.google.com/drive/folders/1Dkq_WZx9G4dbkLsu1CrIf8hcYNnpKIUk?usp=sharing) trained on textzoom for testing.
-
 ## Acknowledge
 
 The repository is benefit a lot from [DETR](https://github.com/facebookresearch/detr). Thanks a lot for their excellent work.
