@@ -9,7 +9,7 @@ from collections import OrderedDict
 def build_backbone(args):
     position_embedding = build_position_encoding(args)
     if args.backbone == 'vit':
-        backbone = VisionTransformer(pretrained=None)    ### ViT-based
+        backbone = VisionTransformer(pretrained='./pretrained/checkpoint-19.pth')    ### ViT-based
         
     model = Joiner(backbone, position_embedding)
     
